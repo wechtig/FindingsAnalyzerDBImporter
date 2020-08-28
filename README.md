@@ -15,7 +15,8 @@ __Vorraussetzungen__
     
 __Setup__  
 1. Den Sourcecode als .zip oder über GIT herunterladen
-2. Den Importer mit maven im Ziel-Projekt hinzufügen. Beispiel-Konfiguration für das Plugin Checkstyle (https://maven.apache.org/plugins/maven-checkstyle-plugin/)
+2. Erstellen eines Admin-Users in der Datenbank oder über die Weboberfläche. Dieser User ist das erste Teammitglied eines Projekts und kann dann andere einladen.
+3. Den Importer mit maven im Ziel-Projekt hinzufügen. Beispiel-Konfiguration für das Plugin Checkstyle (https://maven.apache.org/plugins/maven-checkstyle-plugin/)
             <dbUrl>mongodb://localhost:27017</dbUrl>
             <dbName>findings</dbName>
             <xmlPath>target/checkstyle-result.xml</xmlPath>
@@ -53,4 +54,5 @@ __Starten__
 ## Weitere Möglichkeiten
 * Import der Daten als Projekt-Auswahl in der Weboberfläche.
 * Lösung für Plugins, welche keine XML-Ausgabe unterstützen.
+* Sichere Erstellung des Admin-User 
 
