@@ -15,7 +15,7 @@ __Vorraussetzungen__
     
 __Setup__  
 1. Den Sourcecode als .zip oder über GIT herunterladen
-2. Erstellen eines Admin-Users in der Datenbank oder über die Weboberfläche. Dieser User ist das erste Teammitglied eines Projekts und kann dann andere einladen.
+2. Erstellen eines Admin-Users in der Datenbank oder über die Weboberfläche. Dieser User ist das erste Teammitglied eines Projekts und kann dann andere einladen. Die voreingestellte Mail Adresse ist admin@admin.at. Wenn dies geändert werden soll, so muss die im Importer angepasst werden. (Klasse DBImporter.java)
 3. Den Importer mit maven im Ziel-Projekt hinzufügen. Beispiel-Konfiguration für das Plugin Checkstyle (https://maven.apache.org/plugins/maven-checkstyle-plugin/)
             <dbUrl>mongodb://localhost:27017</dbUrl>
             <dbName>findings</dbName>
